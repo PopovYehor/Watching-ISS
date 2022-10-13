@@ -1,0 +1,52 @@
+@import "./var.scss";
+html,body, *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.column{
+  display: flex;
+  justify-content: center;
+}
+.star-icon{
+  fill: yellow;
+  font-size: 26px;
+}
+.next{
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.list-container{
+  display: flex;
+  justify-content: space-between;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  flex-wrap: wrap;
+  .list-wrap{
+    min-height: 400px;
+    gap: 10px;
+    .issue-item-container{
+      background-color: rgba(138, 152, 160, 0.486);
+      padding: 15px;
+      gap: 10px;
+      border: 2px solid;
+      .issue-item-wrap{
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: white;
+        padding: 8px;
+        .btn{
+          border: 1.5px solid;
+          background-color: rgb(197, 243, 197);
+          padding: 3px;
+          font-size: 12px;
+          border-radius: 0;
+        }
+      }
+    }
+  }
+  
+}
+
