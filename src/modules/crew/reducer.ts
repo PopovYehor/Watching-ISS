@@ -7,7 +7,7 @@ const defaultState: ICrewState = {
 const reducerCrew =(state: ICrewState = defaultState, action: ICrewAction)=>{
     switch (action.type){
         case SET_CREW:
-            return {...state, crew: [...state.crew, action.payload]}
+            return {...state, crew: action.payload}
         default:
             return state
     }

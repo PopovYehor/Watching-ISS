@@ -1,1 +1,17 @@
 @import "~bootstrap/scss/bootstrap";
+
+@media screen and (min-width: 576px) {
+    .header{
+        margin-top: 50px;
+    }
+    .main{
+        margin-bottom: 50px;
+    }
+    .col-sm-3{
+        width: 20%;
+    }
+}
+
+p{
+    margin: 0;
+}

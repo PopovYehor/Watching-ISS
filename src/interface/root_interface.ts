@@ -8,5 +8,4 @@ interface IRootState {
     crew?: ICrewState
 }
 
-
 export {IRootState}

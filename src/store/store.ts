@@ -8,7 +8,6 @@ const allReducer = combineReducers({
     map: reducerMap,
     time: reducerTime,
     crew: reducerCrew
-    
 })
 
 const store = createStore(allReducer)

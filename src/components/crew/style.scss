@@ -1,0 +1,28 @@
+.crew-container{
+    padding: 10px 0;
+    .crew-wrap{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        .crew-item-wrap{
+            margin: 0 12px;
+            display: flex;
+            align-items: center;
+            overflow: auto;
+            border: .5px solid;
+            border-radius: 10px;
+            padding: 5px;
+            .crew-item-img{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+            }
+            .crew-item-text{
+                margin-left: 10px;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+

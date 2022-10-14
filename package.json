@@ -28,6 +28,7 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@react-google-maps/api": "^2.13.1",
     "@react-icons/all-files": "^4.1.0",
+    "@types/react": "^18.0.21",
     "bootstrap": "^5.2.2",
     "cors": "^2.8.5",
     "file-loader": "^6.2.0",

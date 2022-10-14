@@ -4,7 +4,7 @@ interface ICrewState{
 
 interface ICrewAction {
     type: string,
-    payload: string
+    payload: []
 }
 
 interface ICrewArray{
@@ -12,4 +12,9 @@ interface ICrewArray{
     craft: string
 }
 
-export {ICrewState, ICrewAction, ICrewArray}
+interface ICrewItem{
+    name?: string,
+    count?: number,
+}
+
+export {ICrewState, ICrewAction, ICrewArray, ICrewItem}

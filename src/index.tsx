@@ -8,13 +8,10 @@ import store from "./store/store";
 
 function Init() {
 
-
     return (
             <React.StrictMode>
                 <Provider store={store}>
-                        <Router>
-                                <App/>
-                        </Router>
+                        <App/>
                 </Provider>
            </React.StrictMode>
     )
