@@ -2,19 +2,23 @@ interface ICrewState{
     crew: []
 }
 
-interface ICrewAction {
-    type: string,
-    payload: []
-}
-
 interface ICrewArray{
     name: string,
     craft: string
 }
 
-interface ICrewItem{
-    name?: string,
-    count?: number,
+interface ICrewPeople{
+    people: ICrewArray[],
+    
 }
 
-export {ICrewState, ICrewAction, ICrewArray, ICrewItem}
+interface ICrewItem{
+    count: number,
+}
+
+interface ICrewAction {
+    type: string,
+    payload: ICrewArray[]
+}
+
+export {ICrewState, ICrewAction, ICrewArray, ICrewItem, ICrewPeople}

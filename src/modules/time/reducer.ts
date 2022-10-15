@@ -1,8 +1,9 @@
 import { ITimeAction, ITimeState } from "../../interface/time/interface"
 import { SET_DATE, SET_TIME } from "./type"
-const defaultState = {
+const defaultState: ITimeState = {
     time: '',
     date: '',
+    updateTime: 5
 }
 
 const reducerTime =(state: ITimeState = defaultState, action: ITimeAction)=>{

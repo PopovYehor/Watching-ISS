@@ -1,7 +1,7 @@
 import { SET_POSITION_LAT, SET_POSITION_LNG } from "./type"
 import { IMapAction, IMapState } from "../../interface/map/interface"
 
-const defaultState = {
+const defaultState: IMapState = {
     lat: 0,
     lng: 0,
 }

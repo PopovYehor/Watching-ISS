@@ -6,11 +6,12 @@ import Time from "../components/time/time";
 import Map from "../components/map/map";
 
 function Main (){
+    
     return(
         <>
             <Container fluid = "lg" className="header">
                 <Row>
-                    <Col sm={9} className="item-wrap">
+                    <Col sm={9} className="item-wrap location-wrap">
                         <Locations/>
                     </Col>
                     <Col sm={3} className="item-wrap">

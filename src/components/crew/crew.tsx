@@ -5,8 +5,8 @@ import { IRootState } from "../../interface/root_interface"
 import CrewTotal from "./crewTotal/crewTotal"
 import "./style"
 function Crew (){
-    
-  const crews = useSelector((state : IRootState) => state.crew.crew)
+
+  const crews: ICrewArray[] = useSelector((state : IRootState) => state.crew.crew)
 
   return(
     <>

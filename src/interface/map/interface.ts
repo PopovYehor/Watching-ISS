@@ -8,4 +8,13 @@ interface IMapAction {
     payload: number
 }
 
-export {IMapState, IMapAction}
+interface IPosition{
+    longitude: string,
+    latitude: string
+}
+
+interface IISSPosition{
+    iss_position: IPosition
+}
+
+export {IMapState, IMapAction, IISSPosition, IPosition}

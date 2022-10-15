@@ -1,8 +1,12 @@
-@import "./var.scss";
+@import "~bootstrap/scss/bootstrap";
+
 html,body, *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+body{
+  background-color:  rgba(137, 172, 227, 0.356);
 }
 
 .item-container{
@@ -14,9 +18,11 @@ html,body, *{
 }
 .item-wrap{
   min-height: 65px;
-  border: 2px solid black;
+  border: 2px solid;
   margin: 5px;
   gap: 15px;
+  background-color: #FCF6F5FF;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
   .item-title{
     font-weight: 600;
   }
@@ -24,15 +30,24 @@ html,body, *{
     font-style: italic;
   }
 }
-
+p{
+  margin: 0;
+}
 
 @media screen and (max-width: 576px) {
   .main-wrap{
     flex-direction: column;
-    .map-wrap{
-      height: 400px;
-    }
   }
 }
 
-
+@media screen and (min-width: 576px) {
+  .header{
+      margin-top: 50px;
+  }
+  .main{
+      margin-bottom: 50px;
+  }
+  .col-sm-3{
+      width: 20%;
+  }
+}

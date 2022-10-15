@@ -1,0 +1,24 @@
+.location-wrap{
+    padding: 0;
+    position: relative;
+    .item-container{
+      padding: 0 12px;
+      .update-position{
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    .progress-bar{
+      bottom: 4px;
+      .css-5xe99f-MuiLinearProgress-bar1{
+        transition: transform .1s linear;
+        -webkit-transition: transform .1s linear;
+      }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .update-time{
+        display: none;
+    }
+}

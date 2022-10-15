@@ -3,9 +3,10 @@ import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 import { IRootState } from '../../interface/root_interface';
 import { useSelector } from "react-redux/es/hooks/useSelector";
 import "./style"
+import { IMapState } from '../../interface/map/interface';
 
 function Map() {
-    const positionISS = {
+    const positionISS: IMapState = {
         lat: useSelector((state: IRootState) => state.map.lat),
         lng: useSelector((state: IRootState) => state.map.lng)
     };

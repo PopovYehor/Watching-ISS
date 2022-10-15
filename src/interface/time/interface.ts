@@ -1,6 +1,7 @@
 interface ITimeState{
     time: string,
-    date: string
+    date: string,
+    updateTime?: number
 }
 
 interface ITimeAction {
@@ -8,4 +9,8 @@ interface ITimeAction {
     payload: string
 }
 
-export {ITimeState, ITimeAction}
+interface ITimeStamp{
+    timestamp: number
+}
+
+export {ITimeState, ITimeAction, ITimeStamp}
