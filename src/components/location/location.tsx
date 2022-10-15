@@ -14,10 +14,10 @@ function Locations (){
 
     useEffect(()=>{
         const intervalTime = setInterval(() => {
-            setUpdate((update) => update - 1)
+            setUpdate((update: number) => update - 1)
         }, 1000)
         const intervalProgress = setInterval(() => {
-            SetProgress((progress) => progress + (10.2/updateTime))
+            SetProgress((progress: number) => progress + (10.2/updateTime))
         }, 100)
         return () =>{ 
             clearInterval(intervalTime)
